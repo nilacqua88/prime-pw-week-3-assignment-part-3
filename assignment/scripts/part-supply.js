@@ -13,7 +13,7 @@ console.log('2. Array of supplyChanges:');
 let supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log(supplyChanges);
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:' , supplyChanges[2]);
+console.log('3. Second supplyChange is:' , supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges'
 //    array & console.log the value removed.
@@ -33,13 +33,13 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log('6. Showing supplyChanges...');
 for (let x = 0; x<supplyChanges.length; x++){
-    console.log('showing that this works', supplyChanges[ x ]);
+    console.log( supplyChanges[ x ]);
   if (supplyChanges[ x ] > '0' ){
-    console.log(`added ${x} parts`);
-} else if (supplyChanges[ x ] = '0') {
-    console.log('No change.', supplyChanges[ x ]);
+    console.log(`added parts`, supplyChanges );
+} else if (supplyChanges[ x ] == '0') {
+    console.log('No change.', supplyChanges);
 } else
-    console.log(`Removed ${x} Parts`);
+    console.log(`Removed Parts`, supplyChanges);
   }
 
 
@@ -57,7 +57,7 @@ for (parts of supplyChanges) {
 console.log('8. Showing supplyChanges with "while" loop');
 while (supplyChanges > '0'){
   console.log('We need these parts', supplyChanges);
-supplyChanges++;
+  supplyChanges++;
 }
 
 // 9. Write a loop to determine the total number of parts available by
